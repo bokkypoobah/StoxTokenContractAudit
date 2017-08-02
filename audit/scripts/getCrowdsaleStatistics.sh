@@ -1,6 +1,6 @@
 #!/bin/sh
 
-geth attach << EOF | grep "RESULT: " | sed "s/RESULT: //"
+geth attach << EOF | grep "RESULT: " | sed "s/RESULT: //" > output.txt
 
 loadScript("abi.js");
 
@@ -24,15 +24,6 @@ console.log("RESULT: crowdsale.tokensSold=" + sale.tokensSold().shift(-18));
 console.log("RESULT: crowdsale.ETH_CAP=" + sale.ETH_CAP());
 console.log("RESULT: crowdsale.EXCHANGE_RATE=" + sale.EXCHANGE_RATE());
 console.log("RESULT: crowdsale.TOKEN_SALE_CAP=" + sale.TOKEN_SALE_CAP().shift(-18));
-var latestBlock = eth.blockNumber;
-var i;
-
-var tokensIssuedEvents = sale.TokensIssued({}, { fromBlock: startBlock, toBlock: latestBlock });
-i = 0;
-tokensIssuedEvents.watch(function (error, result) {
-  console.log("RESULT: TokensIssued " + i++ + " #" + result.blockNumber + ": " + JSON.stringify(result.args));
-});
-tokensIssuedEvents.stopWatching();
 
 var token = eth.contract(tokenAbi).at(tokenAddress);
 var decimals = token.decimals();
@@ -47,6 +38,14 @@ console.log("RESULT: token.transfersEnabled=" + token.transfersEnabled());
 
 var latestBlock = eth.blockNumber;
 var i;
+
+var tokensIssuedEvents = sale.TokensIssued({}, { fromBlock: startBlock, toBlock: latestBlock });
+i = 0;
+tokensIssuedEvents.watch(function (error, result) {
+  console.log("RESULT: TokensIssued " + i++ + " #" + result.blockNumber + ": _to=" + result.args._to +
+    " _tokens=" + result.args._tokens.shift(-decimals));
+});
+tokensIssuedEvents.stopWatching();
 
 var newSmartTokenEvents = token.NewSmartToken({}, { fromBlock: startBlock, toBlock: latestBlock });
 i = 0;
