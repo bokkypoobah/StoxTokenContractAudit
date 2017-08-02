@@ -22,6 +22,9 @@ contract StoxSmartTokenSale is Ownable {
     // BK Ok
     using SaferMath for uint256;
 
+	// BK Ok
+    uint256 public constant DURATION = 14 days;
+
     // BK Ok
     bool public isFinalized = false;
     // BK Ok
@@ -36,8 +39,8 @@ contract StoxSmartTokenSale is Ownable {
     Trustee public trustee;
 
     // BK Next 3 Ok
-    uint256 public startBlock;
-    uint256 public endBlock;
+    uint256 public startTime = 0;
+    uint256 public endTime = 0;
     address public fundingRecipient;
 
     // BK Ok
@@ -45,18 +48,10 @@ contract StoxSmartTokenSale is Ownable {
 
     // TODO: update to the correct values.
     // BK Ok
-    uint256 public constant ETH_PRICE_USD = 227;
+    uint256 public constant ETH_CAP = 148000;
     // BK Ok
     uint256 public constant EXCHANGE_RATE = 200; // 200 STX for ETH
-    // BK Ok - 4,000,000,000,000,000,000,000,000
-    uint256 public constant PARTNER_TOKENS = 5 * 10 ** 6 * 10 ** 18; // TODO: use real amounts.
-
-    // $30M worth of STX (including tokens which were granted to pre-sale strategic partners).
-    // BK NOTE - 30,000,000 / 227 * 200 * 1,000,000,000,000,000,000 - 4,000,000,000,000,000,000,000,000 = 22,431,600,000,000,000,000,000,000
-    // BK NOTE - Could be a little bit more accurate by switching around terms
-    // BK NOTE - 30,000,000,000,000,000,000,000,000 * 200 / 227 - 4,000,000,000,000,000,000,000,000 = 22,431,718,061,674,008,810,572,687
-    // BK Ok
-    uint256 public constant TOKEN_SALE_CAP = (30 * 10 ** 6 / ETH_PRICE_USD) * EXCHANGE_RATE * 10 ** 18 - PARTNER_TOKENS;
+    uint256 public constant TOKEN_SALE_CAP = ETH_CAP * EXCHANGE_RATE * 10 ** 18;
 
     // BK Ok
     event TokensIssued(address indexed _to, uint256 _tokens);
@@ -64,8 +59,7 @@ contract StoxSmartTokenSale is Ownable {
     /// @dev Throws if called when not during sale.
     // BK Ok
     modifier onlyDuringSale() {
-        // BK Ok
-        if (tokensSold >= TOKEN_SALE_CAP || block.number < startBlock || block.number >= endBlock) {
+        if (tokensSold >= TOKEN_SALE_CAP || now < startTime || now >= endTime) {
             // BK Ok
             throw;
         }
@@ -77,8 +71,7 @@ contract StoxSmartTokenSale is Ownable {
     /// @dev Throws if called before sale ends.
     // BK Ok
     modifier onlyAfterSale() {
-        // BK NOTE - throw if tokensSold < TOKEN_SALE_CAP && block.number < endBlock
-        if (!(tokensSold >= TOKEN_SALE_CAP || block.number >= endBlock)) {
+        if (!(tokensSold >= TOKEN_SALE_CAP || now >= endTime)) {
             // BK Ok
             throw;
         }
@@ -89,26 +82,23 @@ contract StoxSmartTokenSale is Ownable {
 
     /// @dev Constructor that initializes the sale conditions.
     /// @param _fundingRecipient address The address of the funding recipient.
-    /// @param _startBlock uint256 The block that the token sale should start at.
-    /// @param _endBlock uint256 The block that the token sale should end at.
+    /// @param _startTime uint256 The start time of the token sale.
     // BK Ok - Constructor
-    function StoxSmartTokenSale(address _stox, address _fundingRecipient, uint256 _startBlock, uint256 _endBlock) {
+    function StoxSmartTokenSale(address _stox, address _fundingRecipient, uint256 _startTime) {
         // BK Ok - Check token contract address is non-zero
         require(_stox != address(0));
         // BK Ok - Check wallet address is non-zero
         require(_fundingRecipient != address(0));
         // BK Ok - Check starting in the future
-        require(_startBlock > block.number);
-        // BK Ok - Check ending after starting
-        require(_endBlock > _startBlock);
+        require(_startTime > now);
 
         // BK Ok - Link token contract
         stox = StoxSmartToken(_stox);
 
         // BK Next 3 Ok
         fundingRecipient = _fundingRecipient;
-        startBlock = _startBlock;
-        endBlock = _endBlock;
+        startTime = _startTime;
+        endTime = startTime + DURATION;
     }
 
     /// @dev Distributed tokens to the partners who have participated during the pre-sale.
@@ -121,18 +111,11 @@ contract StoxSmartTokenSale is Ownable {
         assert(tokensSold == 0);
         assert(stox.totalSupply() == 0);
 
-        // TODO: add real partner addresses.
-        // BK Next 5 Ok
-        issueTokens(0x0010230123012010312300102301230120103121, 1 * 10 ** 6 * 10 ** 18);
-        issueTokens(0x0010230123012010312300102301230120103122, 1 * 10 ** 6 * 10 ** 18);
-        issueTokens(0x0010230123012010312300102301230120103123, (2 * 10 ** 6 - 50) * 10 ** 18);
-        issueTokens(0x0010230123012010312300102301230120103124, 50 * 10 ** 18);
-        issueTokens(0x0010230123012010312300102301230120103125, 1 * 10 ** 6 * 10 ** 18);
-
-        // BK Ok
-        assert(tokensSold == PARTNER_TOKENS);
-        // BK Ok
-        assert(stox.totalSupply() == PARTNER_TOKENS);
+        // Distribute strategic tokens to partners. Please note, that this address doesn't represent a single entity or
+        // person and will be only used to distribute tokens to 30~ partners.
+        //
+        // Please expect to see token transfers from this address in the first 24 hours after the token sale ends.
+        issueTokens(0x9065260ef6830f6372F1Bde408DeC57Fe3150530, 14800000 * 10 ** 18);
 
 		// BK Ok
         isDistributed = true;
@@ -167,7 +150,7 @@ contract StoxSmartTokenSale is Ownable {
         // strategic partners and should've been taken from this allocation.
         // BK NOTE - tokens(0x...3129) = strategicPartnershipTokens - PARTNER_BONUS
         // BK Ok
-        stox.issue(0x0010230123012010312300102301230120103129, strategicPartnershipTokens);
+        stox.issue(0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58, strategicPartnershipTokens);
 
         // Issue the remaining tokens as vesting grants:
         // BK NOTE - tokens(trustee) = unsoldTokens - strategicPartnershipTokens
@@ -180,7 +163,7 @@ contract StoxSmartTokenSale is Ownable {
         // BK NOTE - There is no cliff, linear vesting from now to 1y
         // BK NOTE - The vested amount is revokable
         // BK Ok
-        trustee.grant(0x0010230123012010312300102301230120103121, unsoldTokens.mul(25).div(100), now, now,
+        trustee.grant(0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E, unsoldTokens.mul(25).div(100), now, now,
             now.add(1 years), true);
 
         // 20% of the remaining tokens (== 10%) go to Stox team, at uniform 24 months vesting schedule.
@@ -188,7 +171,7 @@ contract StoxSmartTokenSale is Ownable {
         // BK NOTE - There is no cliff, linear vesting from now to 2y
         // BK NOTE - The vested amount is revokable
         // BK OK
-        trustee.grant(0x0010230123012010312300102301230120103122, unsoldTokens.mul(20).div(100), now, now,
+        trustee.grant(0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1, unsoldTokens.mul(20).div(100), now, now,
             now.add(2 years), true);
 
         // Re-enable transfers after the token sale.

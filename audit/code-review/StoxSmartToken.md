@@ -13,9 +13,6 @@ pragma solidity ^0.4.11;
 // BK Ok
 import 'bancor-contracts/solidity/contracts/SmartToken.sol';
 
-// BK Ok
-import './SaferMath.sol';
-
 /// @title Stox Smart Token
 // BK Ok
 contract StoxSmartToken is SmartToken {

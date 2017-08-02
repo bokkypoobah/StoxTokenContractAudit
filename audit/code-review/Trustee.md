@@ -122,7 +122,7 @@ contract Trustee is Ownable {
         // BK Ok - Can only revoke revocable grants
         require(grant.revokable);
 
-        // Send the remaining STX back to the owner
+        // Send the remaining STX back to the owner.
         // BK Ok - Calculate tokens not yet transferred out
         uint256 refund = grant.value.sub(grant.transferred);
 
