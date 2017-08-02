@@ -51,16 +51,13 @@ aware of:
 * The owner of the *StoxSmartToken* contract has the ability to execute `SmartToken.issue(...)` to mint any number of new tokens for any account, at
   any time
 * The owner of the *StoxSmartToken* contract has the ability to execute `SmartToken.destroy(...)` to destroy the tokens for any account, at any time
-* The Bancor GitHub repository files have been updated recently. There is a possibility that some of these files have not been fully
-  tested. Please make sure that you are using the correct version of the Bancor source code. In this audit, I have reviewed the 
-  *crowdsale_audit* branch, as these most closely match the Bancor SmartToken deployed on the Ethereum Mainnet.
 
-The token contract is ERC20 compliant with the following notes:
+The token contract is [ERC20](https://github.com/ethereum/eips/issues/20) compliant with the following features:
 
 * `decimals` is correctly defined as `uint8` instead of `uint256`
 * `transfer(...)` and `transferFrom(...)` will throw instead of returning false if there is an error
 * `transfer(...)` and `transferFrom(...)` have not been built with a check on the size of the data being passed
-* `approve(...)` requires that the approval limit is currently set to 0 before a limit can be set.
+* `approve(...)` requires that a non-zero approval limit be set to 0 before a new non-zero limit can be set
 * Transferring tokens to the *StoxSmartToken* contract address will result in the burning of the tokens, reducing the `totalSupply`
 
 <br />
@@ -171,7 +168,7 @@ audited source code, and that the deployment parameters are correctly set, inclu
 
 ## Testing
 
-The following items were tested using the script [test/01_test1.sh](test/01_test1.sh) with the results saved in [test/test1results.txt](test/test1results.txt):
+The following functions were tested using the script [test/01_test1.sh](test/01_test1.sh) with the results saved in [test/test1results.txt](test/test1results.txt):
 
 * [x] Deploy token contract
 * [x] Deploy sale contract
