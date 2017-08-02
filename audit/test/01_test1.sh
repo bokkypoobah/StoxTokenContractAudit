@@ -48,7 +48,7 @@ if [ "$MODE" == "dev" ]; then
   STARTTIME=`echo "$CURRENTTIME" | bc`
 else
   # Start time 1m 10s in the future
-  STARTTIME=`echo "$CURRENTTIME+75" | bc`
+  STARTTIME=`echo "$CURRENTTIME+60" | bc`
 fi
 STARTTIME_S=`date -r $STARTTIME -u`
 ENDTIME=`echo "$CURRENTTIME+60*4" | bc`
@@ -95,7 +95,7 @@ printf "ENDTIME                   = '$ENDTIME' '$ENDTIME_S'\n" | tee -a $TEST1OU
 
 # --- Modify parameters ---
 `perl -pi -e "s/bancor-contracts\/solidity\/contracts/bancor-contracts/" $STOXSMARTTOKENTEMPSOL`
-#`perl -pi -e "s/0x0010230123012010312300102301230120103121/0xaaaa9de1e6c564446ebca0fd102d8bd92093c756/" $STOXSMARTTOKENTEMPSOL`
+`perl -pi -e "s/DURATION \= 14 days/DURATION \= 4 minutes/" $STOXSMARTTOKENTEMPSOL`
 #`perl -pi -e "s/0x0010230123012010312300102301230120103122/0xabba43e7594e3b76afb157989e93c6621497fd4b/" $STOXSMARTTOKENTEMPSOL`
 #`perl -pi -e "s/0x0010230123012010312300102301230120103123/0xacca534c9f62ab495bd986e002ddf0f054caae4f/" $STOXSMARTTOKENTEMPSOL`
 #`perl -pi -e "s/0x0010230123012010312300102301230120103124/0xadda9b762a00ff12711113bfdc36958b73d7f915/" $STOXSMARTTOKENTEMPSOL`
@@ -185,12 +185,10 @@ console.log("RESULT: ");
 var saleMessage = "Deploy StoxSmartTokenSale";
 // -----------------------------------------------------------------------------
 console.log("RESULT: " + saleMessage);
-var startBlock = parseInt(eth.blockNumber) + 13;
-var endBlock = parseInt(eth.blockNumber) + 22;
 var saleContract = web3.eth.contract(saleAbi);
 var saleTx = null;
 var saleAddress = null;
-var sale = saleContract.new(tokenAddress, multisig, startBlock, endBlock, {from: contractOwnerAccount, data: saleBin, gas: 4000000},
+var sale = saleContract.new(tokenAddress, multisig, $STARTTIME, {from: contractOwnerAccount, data: saleBin, gas: 4000000},
   function(e, contract) {
     if (!e) {
       if (!contract.address) {
@@ -259,13 +257,16 @@ console.log("RESULT: ");
 
 
 // -----------------------------------------------------------------------------
-// Wait until startBlock 
+// Wait for crowdsale start
 // -----------------------------------------------------------------------------
-console.log("RESULT: Waiting until startBlock #" + startBlock + " currentBlock=" + eth.blockNumber);
-while (eth.blockNumber <= startBlock) {
+var startTime = sale.startTime();
+var startTimeDate = new Date(startTime * 1000);
+console.log("RESULT: Waiting until startTime at " + startTime + " " + startTimeDate +
+  " currentDate=" + new Date());
+while ((new Date()).getTime() <= startTimeDate.getTime()) {
 }
-console.log("RESULT: Waited until startBlock #" + startBlock + " currentBlock=" + eth.blockNumber);
-console.log("RESULT: ");
+console.log("RESULT: Waited until startTime at " + startTime + " " + startTimeDate +
+  " currentDate=" + new Date());
 
 
 // -----------------------------------------------------------------------------

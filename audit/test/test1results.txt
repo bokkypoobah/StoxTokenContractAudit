@@ -1,6 +1,6 @@
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       30.000000000000000000           0.000000000000000000 Account #0 - Miner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       35.000000000000000000           0.000000000000000000 Account #0 - Miner
  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433        0.000000000000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Multisig
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
@@ -9,21 +9,17 @@
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000           0.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000           0.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000           0.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000           0.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000           0.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000           0.000000000000000000 Account #15 - Partner 6 - Strategic Partnership
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000           0.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000           0.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                                     0.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 
 Deploy StoxSmartToken
-tokenAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4 gas=4000000 gasUsed=1433152 costETH=0.025796736 costUSD=5.299991004672 @ ETH/USD=205.452 gasPrice=18000000000 block=829 txId=0xfcb2b52072334a31a49240059fc73643a30133712853beb6f1fe5e74073f003e
+tokenAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 gas=4000000 gasUsed=1433152 costETH=0.025796736 costUSD=5.299991004672 @ ETH/USD=205.452 gasPrice=18000000000 block=9 txId=0xfee9c45e80aff0ce685d009a35fc1df184200ffd6ef48343b8fe6f85f5e70555
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       45.025796736000000000           0.000000000000000000 Account #0 - Miner
@@ -35,21 +31,17 @@ tokenAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4 gas=4000000 gasUsed=1433
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000           0.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000           0.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000           0.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000           0.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000           0.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000           0.000000000000000000 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000           0.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000           0.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                                     0.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Deploy StoxSmartToken
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
@@ -57,14 +49,14 @@ token.name=Stox
 token.decimals=18
 token.totalSupply=0
 token.transfersEnabled=false
-NewSmartToken 0 #829: {"_token":"0x2ea7f020f95ad692c6eef6614658f289f79549f4"}
+NewSmartToken 0 #9: {"_token":"0x90d8927407c79c4a28ee879b821c76fc9bcc2688"}
 
 Deploy StoxSmartTokenSale
-saleAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b gas=4000000 gasUsed=2170390 costETH=0.03906702 costUSD=8.02639739304 @ ETH/USD=205.452 gasPrice=18000000000 block=832 txId=0x52e2b33164bf927c326a515099b382507d7c5d30b2e96ed13520c67bcc4260c7
+saleAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d gas=4000000 gasUsed=2069365 costETH=0.03724857 costUSD=7.65279320364 @ ETH/USD=205.452 gasPrice=18000000000 block=12 txId=0x6040917f5c1f4afd95a1d79cbfb14ddd245101b51a8b8dfaefef351c877c2e90
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       55.064863756000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.064863756000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       60.063045306000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.063045306000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Multisig
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
@@ -72,35 +64,30 @@ saleAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b gas=4000000 gasUsed=21703
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000           0.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000           0.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000           0.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000           0.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000           0.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000           0.000000000000000000 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000           0.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000           0.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                                     0.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Deploy StoxSmartTokenSale
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=false
 crowdsale.isDistributed=false
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 crowdsale.trustee=0x0000000000000000000000000000000000000000
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 crowdsale.tokensSold=0
-crowdsale.ETH_PRICE_USD=227
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
@@ -110,11 +97,11 @@ token.totalSupply=0
 token.transfersEnabled=false
 
 Transfer Ownership For Token To TokenSale
-transferOwnershipTx gas=4000000 gasUsed=43613 costETH=0.000785034 costUSD=0.161286805368 @ ETH/USD=205.452 gasPrice=18000000000 block=836 txId=0xb97780902b0821315623b3a17d342360c4b56ba7368e7a1d3e5248a258a30220
+transferOwnershipTx gas=4000000 gasUsed=43613 costETH=0.000785034 costUSD=0.161286805368 @ ETH/USD=205.452 gasPrice=18000000000 block=14 txId=0x114bf448a6704b192592ecd21ad0a0eaf3749772eb10e15b15f59add11a51e90
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       75.065648790000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.065648790000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       70.063830340000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.063830340000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Multisig
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
@@ -122,37 +109,32 @@ transferOwnershipTx gas=4000000 gasUsed=43613 costETH=0.000785034 costUSD=0.1612
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000           0.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000           0.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000           0.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000           0.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000           0.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000           0.000000000000000000 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000           0.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000           0.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                                     0.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Transfer Ownership For Token To TokenSale
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=false
 crowdsale.isDistributed=false
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 crowdsale.trustee=0x0000000000000000000000000000000000000000
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 crowdsale.tokensSold=0
-crowdsale.ETH_PRICE_USD=227
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
-token.newOwner=0x022bfb654ced61e65f2869d87b5b3247514c606b
+token.newOwner=0x0e946b999033257976aa5cbe0e3530618ca1582d
 token.symbol=STX
 token.name=Stox
 token.decimals=18
@@ -160,11 +142,11 @@ token.totalSupply=0
 token.transfersEnabled=false
 
 Accept Transfer Ownership For Token To TokenSale
-acceptTransferOwnershipTx gas=4000000 gasUsed=19103 costETH=0.000343854 costUSD=0.070645492008 @ ETH/USD=205.452 gasPrice=18000000000 block=840 txId=0xc31ab1d3a1ce658a8cae4d9697ba2f8c4ad00a95380ffc4ee760b0b3bb15343f
+acceptTransferOwnershipTx gas=4000000 gasUsed=19081 costETH=0.000343458 costUSD=0.070564133016 @ ETH/USD=205.452 gasPrice=18000000000 block=19 txId=0x9628abd8fe9f4ab6f1890da14316b4949bca999c53794df5c1b281077aba36b2
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       95.065992644000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.065992644000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       95.064173798000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.064173798000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Multisig
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
@@ -172,36 +154,31 @@ acceptTransferOwnershipTx gas=4000000 gasUsed=19103 costETH=0.000343854 costUSD=
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000           0.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000           0.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000           0.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000           0.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000           0.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000           0.000000000000000000 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000           0.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000           0.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                                     0.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Accept Transfer Ownership For Token To TokenSale
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=false
 crowdsale.isDistributed=false
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 crowdsale.trustee=0x0000000000000000000000000000000000000000
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
 crowdsale.tokensSold=0
-crowdsale.ETH_PRICE_USD=227
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-token.owner=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+token.owner=0x0e946b999033257976aa5cbe0e3530618ca1582d
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
@@ -210,11 +187,11 @@ token.totalSupply=0
 token.transfersEnabled=false
 
 Distribute Partner Tokens
-distributeTx gas=4000000 gasUsed=254596 costETH=0.004582728 costUSD=0.941530633056 @ ETH/USD=205.452 gasPrice=18000000000 block=842 txId=0xda559cbe466e78ccc4c748499ca03a4b8d26ca7bd4461c54e8ca4b812feefef8
+distributeTx gas=4000000 gasUsed=108968 costETH=0.001961424 costUSD=0.402978483648 @ ETH/USD=205.452 gasPrice=18000000000 block=21 txId=0xa7a419cc354543f60606232540e76d95eaf7e9b30b815eea2d7ddb4edc6eaa3c
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      105.070575372000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.070575372000000000           0.000000000000000000 Account #1 - Contract Owner
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      105.066135222000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.066135222000000000           0.000000000000000000 Account #1 - Contract Owner
  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Multisig
  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
@@ -222,554 +199,489 @@ distributeTx gas=4000000 gasUsed=254596 costETH=0.004582728 costUSD=0.9415306330
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000           0.000000000000000000 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000           0.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                              5000000.000000000000000000 Total Token Balances
+                                                                             14800000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Distribute Partner Tokens
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=false
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 crowdsale.trustee=0x0000000000000000000000000000000000000000
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=5000000
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=14800000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-TokensIssued 0 #842: {"_to":"0x0010230123012010312300102301230120103121","_tokens":"1e+24"}
-TokensIssued 1 #842: {"_to":"0x0010230123012010312300102301230120103122","_tokens":"1e+24"}
-TokensIssued 2 #842: {"_to":"0x0010230123012010312300102301230120103123","_tokens":"1.99995e+24"}
-TokensIssued 3 #842: {"_to":"0x0010230123012010312300102301230120103124","_tokens":"50000000000000000000"}
-TokensIssued 4 #842: {"_to":"0x0010230123012010312300102301230120103125","_tokens":"1e+24"}
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-token.owner=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsale.TOKEN_SALE_CAP=29600000
+TokensIssued 0 #21: {"_to":"0x9065260ef6830f6372f1bde408dec57fe3150530","_tokens":"1.48e+25"}
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+token.owner=0x0e946b999033257976aa5cbe0e3530618ca1582d
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=5000000
+token.totalSupply=14800000
 token.transfersEnabled=false
-Issuance 0 #842: _amount=1000000
-Issuance 1 #842: _amount=1000000
-Issuance 2 #842: _amount=1999950
-Issuance 3 #842: _amount=50
-Issuance 4 #842: _amount=1000000
-Transfer 0 #842: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0x0010230123012010312300102301230120103121 _value=1000000
-Transfer 1 #842: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0x0010230123012010312300102301230120103122 _value=1000000
-Transfer 2 #842: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0x0010230123012010312300102301230120103123 _value=1999950
-Transfer 3 #842: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0x0010230123012010312300102301230120103124 _value=50
-Transfer 4 #842: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0x0010230123012010312300102301230120103125 _value=1000000
+Issuance 0 #21: _amount=14800000
+Transfer 0 #21: _from=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 _to=0x9065260ef6830f6372f1bde408dec57fe3150530 _value=14800000
 
-Waiting until startBlock #843 currentBlock=842
-Waited until startBlock #843 currentBlock=844
-
+Waiting until startTime at 1501673530 Wed, 02 Aug 2017 21:32:10 AEST currentDate=Wed, 02 Aug 2017 21:32:34 AEST
+Waited until startTime at 1501673530 Wed, 02 Aug 2017 21:32:10 AEST currentDate=Wed, 02 Aug 2017 21:32:34 AEST
 Send Valid Contribution
-validContribution1Tx gas=400000 gasUsed=65607 costETH=0.001180926 costUSD=0.242623608552 @ ETH/USD=205.452 gasPrice=18000000000 block=846 txId=0x8f195be156c9beb231aa7941d411da1d47d9ac867490f05aa4659ded319bb738
-validContribution2Tx gas=400000 gasUsed=65607 costETH=0.001180926 costUSD=0.242623608552 @ ETH/USD=205.452 gasPrice=18000000000 block=846 txId=0xea790271f2785456521e0333c55b355738489461a498e21cd7b546943bb76999
+validContribution1Tx gas=400000 gasUsed=65527 costETH=0.001179486 costUSD=0.242327757672 @ ETH/USD=205.452 gasPrice=18000000000 block=23 txId=0xa612db6b40c2ee58bc5a5979941a1e89ec4a3fbb0484d3875c8504ff2edd4263
+validContribution2Tx gas=400000 gasUsed=72397 costETH=0.001303146 costUSD=0.267733951992 @ ETH/USD=205.452 gasPrice=18000000000 block=23 txId=0x478a1af6722bbf7328bf231294c3692bca6ad31a545b547a0caee7b3fa1c4c49
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      125.072937224000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.070575372000000000           0.000000000000000000 Account #1 - Contract Owner
- 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    80000.456790122456790122           0.000000000000000000 Account #2 - Multisig
- 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.334514259333333333     6000066.666666666666666600 Account #3
- 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -50000.124637715123456789    10000024.691357824691357800 Account #4
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      115.068617854000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.066135222000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    74000.000000000000000000           0.000000000000000000 Account #2 - Multisig
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.334512819333333333     6000066.666666666666666600 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -43999.667969812666666667     8799933.333333333333333400 Account #4
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000           0.000000000000000000 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000           0.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                             21000091.358024491358024400 Total Token Balances
+                                                                             29600000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Send Valid Contribution ac3 30,000.333333333333333333 ETH ~ 6,000,000 STX
 PASS Send Valid Contribution ac4 50,000.123456789123456789 ETH ~ 10,000,000 STX
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=false
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 crowdsale.trustee=0x0000000000000000000000000000000000000000
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=21000091.3580244913580244
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=29600000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-TokensIssued 0 #846: {"_to":"0xa44a08d3f6933c69212114bb66e2df1813651844","_tokens":"1.00000246913578246913578e+25"}
-TokensIssued 1 #846: {"_to":"0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0","_tokens":"6.0000666666666666666666e+24"}
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-token.owner=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsale.TOKEN_SALE_CAP=29600000
+TokensIssued 0 #23: {"_to":"0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0","_tokens":"6.0000666666666666666666e+24"}
+TokensIssued 1 #23: {"_to":"0xa44a08d3f6933c69212114bb66e2df1813651844","_tokens":"8.7999333333333333333334e+24"}
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+token.owner=0x0e946b999033257976aa5cbe0e3530618ca1582d
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=21000091.3580244913580244
+token.totalSupply=29600000
 token.transfersEnabled=false
-Issuance 0 #846: _amount=10000024.6913578246913578
-Issuance 1 #846: _amount=6000066.6666666666666666
-Transfer 0 #846: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=10000024.6913578246913578
-Transfer 1 #846: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=6000066.6666666666666666
+Issuance 0 #23: _amount=6000066.6666666666666666
+Issuance 1 #23: _amount=8799933.3333333333333334
+Transfer 0 #23: _from=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 _to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _value=6000066.6666666666666666
+Transfer 1 #23: _from=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 _to=0xa44a08d3f6933c69212114bb66e2df1813651844 _value=8799933.3333333333333334
 
-Waiting until endBlock #852 currentBlock=846
-Waited until endBlock #852 currentBlock=853
 
 Finalise Crowdsale
-finaliseTx gas=4000000 gasUsed=1001251 costETH=0.018022518 costUSD=3.702762368136 @ ETH/USD=205.452 gasPrice=18000000000 block=855 txId=0x2e2540a89cdf8b121a98571aef3ada14ad70a6f181cb443b19d9651e391c9e30
+finaliseTx gas=4000000 gasUsed=1001122 costETH=0.018020196 costUSD=3.702285308592 @ ETH/USD=205.452 gasPrice=18000000000 block=26 txId=0x2c827828817f681a91efe64e8929f49fa3b575b1639155e3c3855c7110cdbd37
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      170.090959742000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.088597890000000000           0.000000000000000000 Account #1 - Contract Owner
- 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    80000.456790122456790122           0.000000000000000000 Account #2 - Multisig
- 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.334514259333333333     6000066.666666666666666600 Account #3
- 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -50000.124637715123456789    10000024.691357824691357800 Account #4
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      130.086638050000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.084155418000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    74000.000000000000000000           0.000000000000000000 Account #2 - Multisig
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.334512819333333333     6000066.666666666666666600 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -43999.667969812666666667     8799933.333333333333333400 Account #4
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000    11550050.246913470246913420 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
-19 0x66d52ce1d5c39a757791f90f55fbb06a4f563d27        0.000000000000000000     9450041.111111021111110980 Trustee
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000    16280000.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+15 0x36a87f9d8730adffed9575b4844c012652ea2c32        0.000000000000000000    13320000.000000000000000000 Trustee
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                             42000182.716048982716048800 Total Token Balances
+                                                                             59200000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Finalise Crowdsale
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=true
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-crowdsale.trustee=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+crowdsale.trustee=0x36a87f9d8730adffed9575b4844c012652ea2c32
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=21000091.3580244913580244
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=29600000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-token.owner=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+token.owner=0x0e946b999033257976aa5cbe0e3530618ca1582d
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=42000182.7160489827160488
+token.totalSupply=59200000
 token.transfersEnabled=true
-Issuance 0 #855: _amount=11550050.24691347024691342
-Issuance 1 #855: _amount=9450041.11111102111111098
-Transfer 0 #855: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0x0010230123012010312300102301230120103129 _value=11550050.24691347024691342
-Transfer 1 #855: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27 _value=9450041.11111102111111098
-trusteeContractAddress=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27
-trustee.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-trustee.owner=0x022bfb654ced61e65f2869d87b5b3247514c606b
+Issuance 0 #26: _amount=16280000
+Issuance 1 #26: _amount=13320000
+Transfer 0 #26: _from=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 _to=0xbc14105ccddeaadb96ba8dce18b40c45b6bacf58 _value=16280000
+Transfer 1 #26: _from=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 _to=0x36a87f9d8730adffed9575b4844c012652ea2c32 _value=13320000
+trusteeContractAddress=0x36a87f9d8730adffed9575b4844c012652ea2c32
+trustee.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+trustee.owner=0x0e946b999033257976aa5cbe0e3530618ca1582d
 trustee.newOwnerCandidate=0x0000000000000000000000000000000000000000
-trustee.totalVesting=9450041.11111102111111098
-NewGrant 0 #855: {"_from":"0x022bfb654ced61e65f2869d87b5b3247514c606b","_to":"0x0010230123012010312300102301230120103121","_value":"5.2500228395061228395061e+24"}
-NewGrant 1 #855: {"_from":"0x022bfb654ced61e65f2869d87b5b3247514c606b","_to":"0x0010230123012010312300102301230120103122","_value":"4.20001827160489827160488e+24"}
+trustee.totalVesting=13320000
+NewGrant 0 #26: {"_from":"0x0e946b999033257976aa5cbe0e3530618ca1582d","_to":"0xb54c6a870d4ad65e23d471fb7941ad271d323f5e","_value":"7.4e+24"}
+NewGrant 1 #26: {"_from":"0x0e946b999033257976aa5cbe0e3530618ca1582d","_to":"0x4eb4cd1d125d9d281709ff38d65b99a6927b46c1","_value":"5.92e+24"}
 
 Can Move Tokens
-canTransfer1Tx gas=100000 gasUsed=51643 costETH=0.000929574 costUSD=0.190982837448 @ ETH/USD=205.452 gasPrice=18000000000 block=858 txId=0xca29b1a986bf746ee9063f467b497aa1c59b0a4ceac2acd3cbb3f9665b87d0ed
-canTransfer2Tx gas=100000 gasUsed=45808 costETH=0.000824544 costUSD=0.169404213888 @ ETH/USD=205.452 gasPrice=18000000000 block=858 txId=0x8a4be9352287c50c25c898a1f62b2f9bbeaba5b9a7249080d738b3fa789ea89c
-canTransfer3Tx gas=100000 gasUsed=43374 costETH=0.000780732 costUSD=0.160402950864 @ ETH/USD=205.452 gasPrice=18000000000 block=860 txId=0xcf3600f0bfde2c0dae1dffef70304727f7a23e98a65b690a0b1ec58e30abe26a
+canTransfer1Tx gas=100000 gasUsed=51643 costETH=0.000929574 costUSD=0.190982837448 @ ETH/USD=205.452 gasPrice=18000000000 block=28 txId=0x39294ca30931ef6a695e53f0deb0f22f03f05b35b78327a71734e99de850f674
+canTransfer2Tx gas=100000 gasUsed=45808 costETH=0.000824544 costUSD=0.169404213888 @ ETH/USD=205.452 gasPrice=18000000000 block=28 txId=0x29cf5f09be36ee287e9fcbf29fcd700bb4d7384eea2605c7944d97135f2e8758
+canTransfer3Tx gas=100000 gasUsed=43374 costETH=0.000780732 costUSD=0.160402950864 @ ETH/USD=205.452 gasPrice=18000000000 block=30 txId=0x45933c4b332dd66e011e26073a8d7f23c050d0f743f9dee5faf07919e1f4fdc5
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      195.093494592000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.088597890000000000           0.000000000000000000 Account #1 - Contract Owner
- 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    80000.456790122456790122           0.000000000000000000 Account #2 - Multisig
- 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.335443833333333333     6000065.666666666666666600 Account #3
- 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -50000.125462259123456789    10000021.691357824691357800 Account #4
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      150.089172900000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.084155418000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    74000.000000000000000000           0.000000000000000000 Account #2 - Multisig
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.335442393333333333     6000065.666666666666666600 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -43999.668794356666666667     8799930.333333333333333400 Account #4
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           1.000000000000000000 Account #5
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000780732000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           3.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000    11550050.246913470246913420 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
-19 0x66d52ce1d5c39a757791f90f55fbb06a4f563d27        0.000000000000000000     9450041.111111021111110980 Trustee
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000    16280000.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+15 0x36a87f9d8730adffed9575b4844c012652ea2c32        0.000000000000000000    13320000.000000000000000000 Trustee
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                             42000182.716048982716048800 Total Token Balances
+                                                                             59200000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Can Move Tokens - transfer 1 STX ac3 -> ac5. CHECK for movement
 PASS Can Move Tokens - ac4 approve 3 STX ac6
 PASS Can Move Tokens - ac6 transferFrom 3 STX ac4 -> ac7. CHECK for movement
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=true
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-crowdsale.trustee=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+crowdsale.trustee=0x36a87f9d8730adffed9575b4844c012652ea2c32
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=21000091.3580244913580244
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=29600000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-token.owner=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+token.owner=0x0e946b999033257976aa5cbe0e3530618ca1582d
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=42000182.7160489827160488
+token.totalSupply=59200000
 token.transfersEnabled=true
-Approval 0 #858 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=3
-Transfer 0 #858: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=1
-Transfer 1 #860: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=3
+Approval 0 #28 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=3
+Transfer 0 #28: _from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 _to=0xa55a151eb00fded1634d27d1127b4be4627079ea _value=1
+Transfer 1 #30: _from=0xa44a08d3f6933c69212114bb66e2df1813651844 _to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec _value=3
 
 Transfer Ownership For Token To ContractOwner
-transferOwnership2Tx gas=4000000 gasUsed=43613 costETH=0.000785034 costUSD=0.161286805368 @ ETH/USD=205.452 gasPrice=18000000000 block=836 txId=0xb97780902b0821315623b3a17d342360c4b56ba7368e7a1d3e5248a258a30220
+transferOwnership2Tx gas=4000000 gasUsed=43613 costETH=0.000785034 costUSD=0.161286805368 @ ETH/USD=205.452 gasPrice=18000000000 block=14 txId=0x114bf448a6704b192592ecd21ad0a0eaf3749772eb10e15b15f59add11a51e90
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      215.094296150000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.089399448000000000           0.000000000000000000 Account #1 - Contract Owner
- 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    80000.456790122456790122           0.000000000000000000 Account #2 - Multisig
- 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.335443833333333333     6000065.666666666666666600 Account #3
- 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -50000.125462259123456789    10000021.691357824691357800 Account #4
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      175.089974062000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.084956580000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    74000.000000000000000000           0.000000000000000000 Account #2 - Multisig
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.335442393333333333     6000065.666666666666666600 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -43999.668794356666666667     8799930.333333333333333400 Account #4
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           1.000000000000000000 Account #5
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000780732000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           3.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000    11550050.246913470246913420 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
-19 0x66d52ce1d5c39a757791f90f55fbb06a4f563d27        0.000000000000000000     9450041.111111021111110980 Trustee
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000    16280000.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+15 0x36a87f9d8730adffed9575b4844c012652ea2c32        0.000000000000000000    13320000.000000000000000000 Trustee
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                             42000182.716048982716048800 Total Token Balances
+                                                                             59200000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Transfer Ownership For Token To ContractOwner
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=true
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-crowdsale.trustee=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+crowdsale.trustee=0x36a87f9d8730adffed9575b4844c012652ea2c32
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=21000091.3580244913580244
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=29600000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-token.owner=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+token.owner=0x0e946b999033257976aa5cbe0e3530618ca1582d
 token.newOwner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=42000182.7160489827160488
+token.totalSupply=59200000
 token.transfersEnabled=true
 
 Accept Transfer Ownership For Token To ContractOwner
-acceptTransferOwnership2Tx gas=4000000 gasUsed=18297 costETH=0.000329346 costUSD=0.067664794392 @ ETH/USD=205.452 gasPrice=18000000000 block=867 txId=0xf8079c5c571f0a0ed309d0d546e8f9f3381a4ab335df4eace90f47fd72f57a84
+acceptTransferOwnership2Tx gas=4000000 gasUsed=18297 costETH=0.000329346 costUSD=0.067664794392 @ ETH/USD=205.452 gasPrice=18000000000 block=37 txId=0x86bb5314809e0771705fd080d4afe31f96593ed523ace7e52f4c795bf348ef74
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      230.094625496000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.089728794000000000           0.000000000000000000 Account #1 - Contract Owner
- 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    80000.456790122456790122           0.000000000000000000 Account #2 - Multisig
- 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.335443833333333333     6000065.666666666666666600 Account #3
- 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -50000.125462259123456789    10000021.691357824691357800 Account #4
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      185.090303408000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.085285926000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    74000.000000000000000000           0.000000000000000000 Account #2 - Multisig
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.335442393333333333     6000065.666666666666666600 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -43999.668794356666666667     8799930.333333333333333400 Account #4
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           1.000000000000000000 Account #5
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000780732000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           3.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000    11550050.246913470246913420 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
-19 0x66d52ce1d5c39a757791f90f55fbb06a4f563d27        0.000000000000000000     9450041.111111021111110980 Trustee
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000    16280000.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+15 0x36a87f9d8730adffed9575b4844c012652ea2c32        0.000000000000000000    13320000.000000000000000000 Trustee
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                             42000182.716048982716048800 Total Token Balances
+                                                                             59200000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Accept Transfer Ownership For Token To ContractOwner
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=true
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-crowdsale.trustee=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+crowdsale.trustee=0x36a87f9d8730adffed9575b4844c012652ea2c32
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=21000091.3580244913580244
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=29600000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=42000182.7160489827160488
+token.totalSupply=59200000
 token.transfersEnabled=true
 
 Disable Token Transfers
-disableTransferTx gas=4000000 gasUsed=13421 costETH=0.000241578 costUSD=0.049632683256 @ ETH/USD=205.452 gasPrice=18000000000 block=869 txId=0x389388b89a8f093d7a16681c81420a9889082fbca2a85083678a7bc362ba139b
+disableTransferTx gas=4000000 gasUsed=13421 costETH=0.000241578 costUSD=0.049632683256 @ ETH/USD=205.452 gasPrice=18000000000 block=39 txId=0x56d2ae0de471806ad2c845c809104e3f7a919fbcd237111b4720eb69eacb4a0a
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      240.094867074000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.089970372000000000           0.000000000000000000 Account #1 - Contract Owner
- 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    80000.456790122456790122           0.000000000000000000 Account #2 - Multisig
- 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.335443833333333333     6000065.666666666666666600 Account #3
- 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -50000.125462259123456789    10000021.691357824691357800 Account #4
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      195.090544986000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.085527504000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    74000.000000000000000000           0.000000000000000000 Account #2 - Multisig
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.335442393333333333     6000065.666666666666666600 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -43999.668794356666666667     8799930.333333333333333400 Account #4
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           1.000000000000000000 Account #5
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000780732000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           3.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000    11550050.246913470246913420 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
-19 0x66d52ce1d5c39a757791f90f55fbb06a4f563d27        0.000000000000000000     9450041.111111021111110980 Trustee
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000    16280000.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+15 0x36a87f9d8730adffed9575b4844c012652ea2c32        0.000000000000000000    13320000.000000000000000000 Trustee
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                             42000182.716048982716048800 Total Token Balances
+                                                                             59200000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Disable Token Transfers
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=true
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-crowdsale.trustee=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+crowdsale.trustee=0x36a87f9d8730adffed9575b4844c012652ea2c32
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=21000091.3580244913580244
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=29600000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=42000182.7160489827160488
+token.totalSupply=59200000
 token.transfersEnabled=false
 
 Cannot Move Tokens
-cannotTransfer1Tx gas=100000 gasUsed=100000 costETH=0.0018 costUSD=0.3698136 @ ETH/USD=205.452 gasPrice=18000000000 block=871 txId=0x6debce80a4fd1dc9d4cb934bf8d51f9b4266c6e618e56b6e01872b01b8525efe
-cannotTransfer2Tx gas=100000 gasUsed=45872 costETH=0.000825696 costUSD=0.169640894592 @ ETH/USD=205.452 gasPrice=18000000000 block=871 txId=0xed8be8d3f7164323eded0a0152e71df8ea2ec7cb4d8e1025f57e562a8a4b4482
-cannotTransfer3Tx gas=100000 gasUsed=100000 costETH=0.0018 costUSD=0.3698136 @ ETH/USD=205.452 gasPrice=18000000000 block=873 txId=0xd472de04fc82ec827ad9dcfb212564d3ecb749ad15ce152855c36b758b2acd6e
+cannotTransfer1Tx gas=100000 gasUsed=100000 costETH=0.0018 costUSD=0.3698136 @ ETH/USD=205.452 gasPrice=18000000000 block=41 txId=0xc9838eb11b4d07d1038a0d505c1fca982371b79cab5527292edad4133c22a032
+cannotTransfer2Tx gas=100000 gasUsed=45872 costETH=0.000825696 costUSD=0.169640894592 @ ETH/USD=205.452 gasPrice=18000000000 block=41 txId=0xa9fc462f77e9c44b89162a640fd729d1aede0db08ed41d13f7bed4f81dd72741
+cannotTransfer3Tx gas=100000 gasUsed=100000 costETH=0.0018 costUSD=0.3698136 @ ETH/USD=205.452 gasPrice=18000000000 block=43 txId=0x0983ddca3f99c7fff8be559cd9712736b3337ab4e38dd90f1b5dbe1943b81f0c
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      260.099292770000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.089970372000000000           0.000000000000000000 Account #1 - Contract Owner
- 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    80000.456790122456790122           0.000000000000000000 Account #2 - Multisig
- 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.337243833333333333     6000065.666666666666666600 Account #3
- 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -50000.126287955123456789    10000021.691357824691357800 Account #4
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      215.094970682000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.085527504000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    74000.000000000000000000           0.000000000000000000 Account #2 - Multisig
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.337242393333333333     6000065.666666666666666600 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -43999.669620052666666667     8799930.333333333333333400 Account #4
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           1.000000000000000000 Account #5
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.002580732000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           3.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000    11550050.246913470246913420 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
-19 0x66d52ce1d5c39a757791f90f55fbb06a4f563d27        0.000000000000000000     9450041.111111021111110980 Trustee
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000    16280000.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+15 0x36a87f9d8730adffed9575b4844c012652ea2c32        0.000000000000000000    13320000.000000000000000000 Trustee
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                             42000182.716048982716048800 Total Token Balances
+                                                                             59200000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Cannot Move Tokens - transfer 10 STX ac3 -> ac5. CHECK for NO movement
 PASS Cannot Move Tokens - ac4 approve 30 STX ac6
 PASS Cannot Move Tokens - ac6 transferFrom 30 STX ac4 -> ac7. CHECK for NO movement
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=true
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-crowdsale.trustee=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+crowdsale.trustee=0x36a87f9d8730adffed9575b4844c012652ea2c32
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=21000091.3580244913580244
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=29600000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=42000182.7160489827160488
+token.totalSupply=59200000
 token.transfersEnabled=false
-Approval 0 #871 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=30
+Approval 0 #41 _owner=0xa44a08d3f6933c69212114bb66e2df1813651844 _spender=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 _value=30
 
 Mint Tokens
-mintTokensTx gas=4000000 gasUsed=52551 costETH=0.000945918 costUSD=0.194340744936 @ ETH/USD=205.452 gasPrice=18000000000 block=875 txId=0x7c69534b6c2e0339415b87c82cd788c93c39f1887dd0255cd446086134c3a387
+mintTokensTx gas=4000000 gasUsed=52551 costETH=0.000945918 costUSD=0.194340744936 @ ETH/USD=205.452 gasPrice=18000000000 block=45 txId=0xc3e5c61af4997ff51c64dbb759252e9d5d8792433fea9540af69d757bdc1bcf6
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      270.100238688000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.090916290000000000           0.000000000000000000 Account #1 - Contract Owner
- 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    80000.456790122456790122           0.000000000000000000 Account #2 - Multisig
- 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.337243833333333333     6000065.666666666666666600 Account #3
- 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -50000.126287955123456789    10000021.691357824691357800 Account #4
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      225.095916600000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.086473422000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    74000.000000000000000000           0.000000000000000000 Account #2 - Multisig
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.337242393333333333     6000065.666666666666666600 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -43999.669620052666666667     8799930.333333333333333400 Account #4
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           1.000000000000000000 Account #5
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.002580732000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           3.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000 77700000000.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000    11550050.246913470246913420 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
-19 0x66d52ce1d5c39a757791f90f55fbb06a4f563d27        0.000000000000000000     9450041.111111021111110980 Trustee
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000    16280000.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+15 0x36a87f9d8730adffed9575b4844c012652ea2c32        0.000000000000000000    13320000.000000000000000000 Trustee
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                          77742000182.716048982716048800 Total Token Balances
+                                                                          77759200000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Mint Tokens
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=true
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-crowdsale.trustee=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+crowdsale.trustee=0x36a87f9d8730adffed9575b4844c012652ea2c32
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=21000091.3580244913580244
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=29600000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=77742000182.7160489827160488
+token.totalSupply=77759200000
 token.transfersEnabled=false
-Issuance 0 #875: _amount=77700000000
-Transfer 0 #875: _from=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _to=0xa88a05d2b88283ce84c8325760b72a64591279a2 _value=77700000000
+Issuance 0 #45: _amount=77700000000
+Transfer 0 #45: _from=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 _to=0xa88a05d2b88283ce84c8325760b72a64591279a2 _value=77700000000
 
 Burn Anyone's Tokens
-burnAnyonesTokensTx gas=4000000 gasUsed=37446 costETH=0.000674028 costUSD=0.138480400656 @ ETH/USD=205.452 gasPrice=18000000000 block=877 txId=0x9a82368ada9721c34a2d47e6f15d441264c1726d2e785d01f0b4d07a217be0c4
+burnAnyonesTokensTx gas=4000000 gasUsed=37446 costETH=0.000674028 costUSD=0.138480400656 @ ETH/USD=205.452 gasPrice=18000000000 block=47 txId=0xef1ce69a61bff7f49f24b0f162de2a3b461c37c018c5b2372bacb23f9aa906bc
  # Account                                             EtherBalanceChange                          Token Name
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
- 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      280.100912716000000000           0.000000000000000000 Account #0 - Miner
- 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.091590318000000000           0.000000000000000000 Account #1 - Contract Owner
- 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    80000.456790122456790122           0.000000000000000000 Account #2 - Multisig
- 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.337243833333333333     6000065.666666666666666600 Account #3
- 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -50000.126287955123456789    10000021.691357824691357800 Account #4
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e      235.096590628000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.087147450000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976    74000.000000000000000000           0.000000000000000000 Account #2 - Multisig
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0   -30000.337242393333333333     6000065.666666666666666600 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844   -43999.669620052666666667     8799930.333333333333333400 Account #4
  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           1.000000000000000000 Account #5
  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.002580732000000000           0.000000000000000000 Account #6
  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           3.000000000000000000 Account #7
  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000   690000000.000000000000000000 Account #8
- 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
-10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
-11 0x0010230123012010312300102301230120103121        0.000000000000000000     1000000.000000000000000000 Account #11 - Partner 1 / Invest.com 12.5%
-12 0x0010230123012010312300102301230120103122        0.000000000000000000     1000000.000000000000000000 Account #12 - Partner 2 / Stox 10%
-13 0x0010230123012010312300102301230120103123        0.000000000000000000     1999950.000000000000000000 Account #13 - Partner 3
-14 0x0010230123012010312300102301230120103124        0.000000000000000000          50.000000000000000000 Account #14 - Partner 4
-15 0x0010230123012010312300102301230120103125        0.000000000000000000     1000000.000000000000000000 Account #15 - Partner 5
-16 0x0010230123012010312300102301230120103129        0.000000000000000000    11550050.246913470246913420 Account #15 - Partner 6 - Strategic Partnership
-17 0x2ea7f020f95ad692c6eef6614658f289f79549f4        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
-18 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
-19 0x66d52ce1d5c39a757791f90f55fbb06a4f563d27        0.000000000000000000     9450041.111111021111110980 Trustee
+ 9 0x9065260ef6830f6372F1Bde408DeC57Fe3150530        0.000000000000000000    14800000.000000000000000000 Strategic Partnership #1
+10 0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58        0.000000000000000000    16280000.000000000000000000 Strategic Partnership #2
+11 0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E        0.000000000000000000           0.000000000000000000 Invest.com 12.5%
+12 0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1        0.000000000000000000           0.000000000000000000 Stox 10%
+13 0x90d8927407c79c4a28ee879b821c76fc9bcc2688        0.000000000000000000           0.000000000000000000 Token 'STX' 'Stox'
+14 0x0e946b999033257976aa5cbe0e3530618ca1582d        0.000000000000000000           0.000000000000000000 StoxSmartTokenSale
+15 0x36a87f9d8730adffed9575b4844c012652ea2c32        0.000000000000000000    13320000.000000000000000000 Trustee
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
-                                                                            732000182.716048982716048800 Total Token Balances
+                                                                            749200000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Burn Anyone's Tokens
-crowdsaleContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+crowdsaleContractAddress=0x0e946b999033257976aa5cbe0e3530618ca1582d
 crowdsale.isFinalized=true
 crowdsale.isDistributed=true
-crowdsale.stox=0x2ea7f020f95ad692c6eef6614658f289f79549f4
-crowdsale.trustee=0x66d52ce1d5c39a757791f90f55fbb06a4f563d27
-crowdsale.startBlock=843
-crowdsale.endBlock=852
+crowdsale.stox=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
+crowdsale.trustee=0x36a87f9d8730adffed9575b4844c012652ea2c32
+crowdsale.startTime=1501673530 Wed, 02 Aug 2017 11:32:10 UTC
+crowdsale.endTime=1502883130 Wed, 16 Aug 2017 11:32:10 UTC
 crowdsale.fundingRecipient=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
-crowdsale.tokensSold=21000091.3580244913580244
-crowdsale.ETH_PRICE_USD=227
+crowdsale.tokensSold=29600000
+crowdsale.ETH_CAP=148000
 crowdsale.EXCHANGE_RATE=200
-crowdsale.PARTNER_TOKENS=5000000
-crowdsale.TOKEN_SALE_CAP=21431600
-tokenContractAddress=0x2ea7f020f95ad692c6eef6614658f289f79549f4
+crowdsale.TOKEN_SALE_CAP=29600000
+tokenContractAddress=0x90d8927407c79c4a28ee879b821c76fc9bcc2688
 token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
 token.newOwner=0x0000000000000000000000000000000000000000
 token.symbol=STX
 token.name=Stox
 token.decimals=18
-token.totalSupply=732000182.7160489827160488
+token.totalSupply=749200000
 token.transfersEnabled=false
-Destruction 0 #877: _amount=77010000000
-Transfer 0 #877: _from=0xa88a05d2b88283ce84c8325760b72a64591279a2 _to=0x2ea7f020f95ad692c6eef6614658f289f79549f4 _value=77010000000
+Destruction 0 #47: _amount=77010000000
+Transfer 0 #47: _from=0xa88a05d2b88283ce84c8325760b72a64591279a2 _to=0x90d8927407c79c4a28ee879b821c76fc9bcc2688 _value=77010000000
 
