@@ -1,0 +1,24 @@
+crowdsale.address=0x40349A89114BB34d4E82e5Bf9AE6B2ac3c78b00a
+crowdsale.isFinalized=false
+crowdsale.isDistributed=true
+crowdsale.stox=0x006bea43baa3f7a6f765f14f10a1a1b08334ef45
+crowdsale.trustee=0x0000000000000000000000000000000000000000
+crowdsale.startTime=1501682400 Wed, 02 Aug 2017 14:00:00 UTC
+crowdsale.endTime=1502892000 Wed, 16 Aug 2017 14:00:00 UTC
+crowdsale.fundingRecipient=0x3dd88b391fe62a91436181ed2d43e20b86cde60c
+crowdsale.tokensSold=14800000
+crowdsale.ETH_CAP=148000
+crowdsale.EXCHANGE_RATE=200
+crowdsale.TOKEN_SALE_CAP=29600000
+TokensIssued 0 #4105224: {"_to":"0x9065260ef6830f6372f1bde408dec57fe3150530","_tokens":"1.48e+25"}
+token.address=0x006BeA43Baa3f7A6f765F14f10A1a1b08334EF45
+token.owner=0x40349a89114bb34d4e82e5bf9ae6b2ac3c78b00a
+token.newOwner=0x0000000000000000000000000000000000000000
+token.symbol=STX
+token.name=Stox
+token.decimals=18
+token.totalSupply=14800000
+token.transfersEnabled=false
+NewSmartToken 0 #4105157: {"_token":"0x006bea43baa3f7a6f765f14f10a1a1b08334ef45"}
+Issuance 0 #4105224: _amount=14800000
+Transfer 0 #4105224: _from=0x006bea43baa3f7a6f765f14f10a1a1b08334ef45 _to=0x9065260ef6830f6372f1bde408dec57fe3150530 _value=14800000
