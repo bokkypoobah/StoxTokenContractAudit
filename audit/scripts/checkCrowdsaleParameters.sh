@@ -19,6 +19,7 @@ console.log("RESULT: crowdsale.trustee=" + sale.trustee());
 console.log("RESULT: crowdsale.startTime=" + sale.startTime() + " " + new Date(sale.startTime() * 1000).toUTCString());
 console.log("RESULT: crowdsale.endTime=" + sale.endTime() + " " + new Date(sale.endTime() * 1000).toUTCString());
 console.log("RESULT: crowdsale.fundingRecipient=" + sale.fundingRecipient());
+console.log("RESULT: Balance crowdsale.fundingRecipient=" + web3.fromWei(eth.getBalance(sale.fundingRecipient()), "ether"));
 console.log("RESULT: crowdsale.tokensSold=" + sale.tokensSold().shift(-18));
 console.log("RESULT: crowdsale.ETH_CAP=" + sale.ETH_CAP());
 console.log("RESULT: crowdsale.EXCHANGE_RATE=" + sale.EXCHANGE_RATE());

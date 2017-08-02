@@ -51,7 +51,7 @@ else
   STARTTIME=`echo "$CURRENTTIME+60" | bc`
 fi
 STARTTIME_S=`date -r $STARTTIME -u`
-ENDTIME=`echo "$CURRENTTIME+60*4" | bc`
+ENDTIME=`echo "$CURRENTTIME+60*2" | bc`
 ENDTIME_S=`date -r $ENDTIME -u`
 
 printf "MODE                 = '$MODE'\n" | tee $TEST1OUTPUT
@@ -95,8 +95,9 @@ printf "ENDTIME                   = '$ENDTIME' '$ENDTIME_S'\n" | tee -a $TEST1OU
 
 # --- Modify parameters ---
 `perl -pi -e "s/bancor-contracts\/solidity\/contracts/bancor-contracts/" $STOXSMARTTOKENTEMPSOL`
-`perl -pi -e "s/DURATION \= 14 days/DURATION \= 4 minutes/" $STOXSMARTTOKENTEMPSOL`
-#`perl -pi -e "s/0x0010230123012010312300102301230120103122/0xabba43e7594e3b76afb157989e93c6621497fd4b/" $STOXSMARTTOKENTEMPSOL`
+`perl -pi -e "s/DURATION \= 14 days/DURATION \= 4 minutes/" $STOXSMARTTOKENSALETEMPSOL`
+`perl -pi -e "s/now\.add\(1 years\)/now\.add\(5 minutes\)/" $STOXSMARTTOKENSALETEMPSOL`
+`perl -pi -e "s/0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E/0xa99A0Ae3354c06B1459fd441a32a3F71005D7Da0/" $STOXSMARTTOKENSALETEMPSOL`
 #`perl -pi -e "s/0x0010230123012010312300102301230120103123/0xacca534c9f62ab495bd986e002ddf0f054caae4f/" $STOXSMARTTOKENTEMPSOL`
 #`perl -pi -e "s/0x0010230123012010312300102301230120103124/0xadda9b762a00ff12711113bfdc36958b73d7f915/" $STOXSMARTTOKENTEMPSOL`
 #`perl -pi -e "s/0x0010230123012010312300102301230120103125/0xaeea63b5479b50f79583ec49dacdcf86ddeff392/" $STOXSMARTTOKENTEMPSOL`
@@ -126,7 +127,6 @@ echo "--- Differences $CONTRACTSDIR/$TRUSTEESOL $TRUSTEETEMPSOL ---" | tee -a $T
 echo "$DIFFS1" | tee -a $TEST1OUTPUT
 
 echo "var saleOutput=`solc_4.1.11 --optimize --combined-json abi,bin,interface $STOXSMARTTOKENSALETEMPSOL`;" > $STOXSMARTTOKENSALEJS
-
 
 geth --verbosity 3 attach $GETHATTACHPOINT << EOF | tee -a $TEST1OUTPUT
 loadScript("$STOXSMARTTOKENSALEJS");
@@ -288,13 +288,16 @@ console.log("RESULT: ");
 
 
 // -----------------------------------------------------------------------------
-// Wait until startBlock 
+// Wait for crowdsale end
 // -----------------------------------------------------------------------------
-console.log("RESULT: Waiting until endBlock #" + endBlock + " currentBlock=" + eth.blockNumber);
-while (eth.blockNumber <= endBlock) {
+var endTime = sale.endTime();
+var endTimeDate = new Date(endTime * 1000);
+console.log("RESULT: Waiting until endTime at " + endTime + " " + endTimeDate +
+  " currentDate=" + new Date());
+while ((new Date()).getTime() <= endTimeDate.getTime()) {
 }
-console.log("RESULT: Waited until endBlock #" + endBlock + " currentBlock=" + eth.blockNumber);
-console.log("RESULT: ");
+console.log("RESULT: Waited until endTime at " + endTime + " " + endTimeDate +
+  " currentDate=" + new Date());
 
 
 // -----------------------------------------------------------------------------
@@ -305,6 +308,7 @@ var finaliseTx = sale.finalize({from: contractOwnerAccount, gas: 4000000});
 while (txpool.status.pending > 0) {
 }
 addAccount(sale.trustee(), "Trustee");
+var trustee = eth.contract(trusteeAbi).at(sale.trustee());
 addTrusteeContractAddressAndAbi(sale.trustee(), trusteeAbi);
 printTxData("finaliseTx", finaliseTx);
 printBalances();
@@ -335,6 +339,7 @@ failIfGasEqualsGasUsed(canTransfer2Tx, canTransferMessage + " - ac4 approve 3 ST
 failIfGasEqualsGasUsed(canTransfer3Tx, canTransferMessage + " - ac6 transferFrom 3 STX ac4 -> ac7. CHECK for movement");
 printCrowdsaleContractDetails();
 printTokenContractDetails();
+printTrusteeContractDetails();
 console.log("RESULT: ");
 
 
@@ -350,6 +355,7 @@ printBalances();
 failIfGasEqualsGasUsed(transferOwnership2Tx, transferOwnership2Message);
 printCrowdsaleContractDetails();
 printTokenContractDetails();
+printTrusteeContractDetails();
 console.log("RESULT: ");
 
 
@@ -365,6 +371,7 @@ printBalances();
 failIfGasEqualsGasUsed(acceptTransferOwnership2Tx, acceptTransferOwnership2Message);
 printCrowdsaleContractDetails();
 printTokenContractDetails();
+printTrusteeContractDetails();
 console.log("RESULT: ");
 
 
@@ -380,6 +387,7 @@ printBalances();
 failIfGasEqualsGasUsed(acceptTransferOwnership2Tx, disableTransferMessage);
 printCrowdsaleContractDetails();
 printTokenContractDetails();
+printTrusteeContractDetails();
 console.log("RESULT: ");
 
 
@@ -403,6 +411,7 @@ failIfGasEqualsGasUsed(cannotTransfer2Tx, cannotTransferMessage + " - ac4 approv
 passIfGasEqualsGasUsed(cannotTransfer3Tx, cannotTransferMessage + " - ac6 transferFrom 30 STX ac4 -> ac7. CHECK for NO movement");
 printCrowdsaleContractDetails();
 printTokenContractDetails();
+printTrusteeContractDetails();
 console.log("RESULT: ");
 
 
@@ -418,6 +427,7 @@ printBalances();
 failIfGasEqualsGasUsed(mintTokensTx, mintTokensMessage);
 printCrowdsaleContractDetails();
 printTokenContractDetails();
+printTrusteeContractDetails();
 console.log("RESULT: ");
 
 
@@ -433,6 +443,88 @@ printBalances();
 failIfGasEqualsGasUsed(burnAnyonesTokensTx, burnAnyonesTokensMessage);
 printCrowdsaleContractDetails();
 printTokenContractDetails();
+printTrusteeContractDetails();
+console.log("RESULT: ");
+
+
+// -----------------------------------------------------------------------------
+var transferOwnership3Message = "Transfer Ownership For Trustee To ContractOwner";
+// -----------------------------------------------------------------------------
+console.log("RESULT: " + transferOwnership3Message);
+var transferOwnership3Tx = sale.transferTrusteeOwnership(contractOwnerAccount, {from: contractOwnerAccount, gas: 4000000});
+while (txpool.status.pending > 0) {
+}
+printTxData("transferOwnership3Tx", transferOwnership3Tx);
+printBalances();
+failIfGasEqualsGasUsed(transferOwnership3Tx, transferOwnership3Message);
+printCrowdsaleContractDetails();
+printTokenContractDetails();
+printTrusteeContractDetails();
+console.log("RESULT: ");
+
+
+// -----------------------------------------------------------------------------
+var acceptTransferOwnership3Message = "Accept Transfer Ownership For Trustee To ContractOwner";
+// -----------------------------------------------------------------------------
+var trustee = eth.contract(trusteeAbi).at(sale.trustee());
+console.log("RESULT: " + acceptTransferOwnership3Message);
+var acceptTransferOwnership3Tx = trustee.acceptOwnership({from: contractOwnerAccount, gas: 4000000});
+while (txpool.status.pending > 0) {
+}
+printTxData("acceptTransferOwnership3Tx", acceptTransferOwnership3Tx);
+printBalances();
+failIfGasEqualsGasUsed(acceptTransferOwnership3Tx, acceptTransferOwnership3Message);
+printCrowdsaleContractDetails();
+printTokenContractDetails();
+printTrusteeContractDetails();
+console.log("RESULT: ");
+
+
+// -----------------------------------------------------------------------------
+var enableTransferMessage = "Enable Token Transfers";
+// -----------------------------------------------------------------------------
+console.log("RESULT: " + enableTransferMessage);
+var enableTransferTx = token.disableTransfers(false, {from: contractOwnerAccount, gas: 4000000});
+while (txpool.status.pending > 0) {
+}
+printTxData("enableTransferTx", enableTransferTx);
+printBalances();
+failIfGasEqualsGasUsed(enableTransferTx, enableTransferMessage);
+printCrowdsaleContractDetails();
+printTokenContractDetails();
+printTrusteeContractDetails();
+console.log("RESULT: ");
+
+
+// -----------------------------------------------------------------------------
+var unlockTrusteeGrantMessage = "Unlock Trustee Grant";
+// -----------------------------------------------------------------------------
+console.log("RESULT: " + unlockTrusteeGrantMessage);
+var unlockTrusteeGrantTx = trustee.unlockVestedTokens({from: trustee1, gas: 4000000});
+while (txpool.status.pending > 0) {
+}
+printTxData("unlockTrusteeGrantTx", unlockTrusteeGrantTx);
+printBalances();
+failIfGasEqualsGasUsed(unlockTrusteeGrantTx, unlockTrusteeGrantMessage);
+printCrowdsaleContractDetails();
+printTokenContractDetails();
+printTrusteeContractDetails();
+console.log("RESULT: ");
+
+
+// -----------------------------------------------------------------------------
+var revokeTrusteeGrantMessage = "Revoke Trustee Grant";
+// -----------------------------------------------------------------------------
+console.log("RESULT: " + revokeTrusteeGrantMessage);
+var revokeTrusteeGrantTx = trustee.revoke(trustee1, {from: contractOwnerAccount, gas: 4000000});
+while (txpool.status.pending > 0) {
+}
+printTxData("revokeTrusteeGrantTx", revokeTrusteeGrantTx);
+printBalances();
+failIfGasEqualsGasUsed(revokeTrusteeGrantTx, revokeTrusteeGrantMessage);
+printCrowdsaleContractDetails();
+printTokenContractDetails();
+printTrusteeContractDetails();
 console.log("RESULT: ");
 
 

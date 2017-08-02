@@ -9,7 +9,7 @@ import './Trustee.sol';
 contract StoxSmartTokenSale is Ownable {
     using SaferMath for uint256;
 
-    uint256 public constant DURATION = 14 days;
+    uint256 public constant DURATION = 4 minutes;
 
     bool public isFinalized = false;
     bool public isDistributed = false;
@@ -108,8 +108,8 @@ contract StoxSmartTokenSale is Ownable {
         stox.issue(trustee, unsoldTokens.sub(strategicPartnershipTokens));
 
         // 25% of the remaining tokens (== 12.5%) go to Invest.com, at uniform 12 months vesting schedule.
-        trustee.grant(0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E, unsoldTokens.mul(25).div(100), now, now,
-            now.add(1 years), true);
+        trustee.grant(0xa99A0Ae3354c06B1459fd441a32a3F71005D7Da0, unsoldTokens.mul(25).div(100), now, now,
+            now.add(5 minutes), true);
 
         // 20% of the remaining tokens (== 10%) go to Stox team, at uniform 24 months vesting schedule.
         trustee.grant(0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1, unsoldTokens.mul(20).div(100), now, now,

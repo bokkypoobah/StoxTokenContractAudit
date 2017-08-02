@@ -16,10 +16,11 @@ addAccount(eth.accounts[5], "Account #5");
 addAccount(eth.accounts[6], "Account #6");
 addAccount(eth.accounts[7], "Account #7");
 addAccount(eth.accounts[8], "Account #8");
+addAccount(eth.accounts[9], "Account #9 - Invest.com 12.5% - Locked 1y");
 addAccount("0x9065260ef6830f6372F1Bde408DeC57Fe3150530", "Strategic Partnership #1");
 addAccount("0xbC14105ccDdeAadB96Ba8dCE18b40C45b6bACf58", "Strategic Partnership #2");
-addAccount("0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E", "Invest.com 12.5%");
-addAccount("0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1", "Stox 10%");
+// addAccount("0xb54c6a870d4aD65e23d471Fb7941aD271D323f5E", "Invest.com 12.5% - Locked 1y");
+addAccount("0x4eB4Cd1D125d9d281709Ff38d65b99a6927b46c1", "Stox 10% - Locked 2y");
 
 var minerAccount = eth.accounts[0];
 var contractOwnerAccount = eth.accounts[1];
@@ -30,6 +31,7 @@ var account5 = eth.accounts[5];
 var account6 = eth.accounts[6];
 var account7 = eth.accounts[7];
 var account8 = eth.accounts[8];
+var trustee1 = eth.accounts[9];
 
 var baseBlock = eth.blockNumber;
 
@@ -339,7 +341,7 @@ function printTrusteeContractDetails() {
     var revokeGrantEvents = contract.RevokeGrant({}, { fromBlock: trusteeFromBlock, toBlock: latestBlock });
     i = 0;
     revokeGrantEvents.watch(function (error, result) {
-      console.log("RESULT: NewGrant " + i++ + " #" + result.blockNumber + ": " + JSON.stringify(result.args));
+      console.log("RESULT: RevokeGrant " + i++ + " #" + result.blockNumber + ": " + JSON.stringify(result.args));
     });
     revokeGrantEvents.stopWatching();
 
