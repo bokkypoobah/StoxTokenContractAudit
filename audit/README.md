@@ -16,6 +16,8 @@ This audit has been conducted on the Stox source code in commits [ee616a27](http
 [b4702686](https://github.com/stx-technologies/stox-token/tree/b4702686748bbd2e00c6f85c375e0f8164d448bf) and
 [3ebb5a2d](https://github.com/stx-technologies/stox-token/tree/3ebb5a2d9d393d0e39d824707518fdc3c87bad67).
 
+I am currently merging the changes for [20925fd8](https://github.com/stx-technologies/stox-token/tree/20925fd8b97746f085b95af03173d65a2ddaa504).
+
 <br />
 
 ### Potential Vulnerabilities
