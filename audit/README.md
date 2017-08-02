@@ -189,6 +189,8 @@ The following items were tested using the script [test/01_test1.sh](test/01_test
 * [x] Unlock a trustee grant
 * [x] Revoke a trustee grant
 
+Details of the testing environment can be found in [test](test).
+
 <br />
 
 <hr />
