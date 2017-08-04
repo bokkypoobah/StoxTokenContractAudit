@@ -38,7 +38,7 @@ The *Trustee* contract will be deployed when the crowdsale is finalised.
 * Aug-02-2017 02:00:09 PM +UTC The first contribution [0x5ba13143](https://etherscan.io/tx/0x5ba131431c7376f62c16c8cf9ad5d9340df5892b2a93c7ca34e42e69c9378dcf)
 * Aug-04-2017 12:48:53 AM +UTC The last contributin [0x41114036](https://etherscan.io/tx/0x411140363e868e2c4d55bdc26a040feaac8ca2c1f0f90ee3eaa3dcf10c24466b).
 * Aug-04-2017 12:53:49 AM +UTC The crowdsale was `finalized()` in [0x67c53587](https://etherscan.io/tx/0x67c53587a7180ca087154907d7068de8216163b7ae97415da5d7c328c951c5b0).
-* Contribution period 1 day 10 hours 48 seconds
+* Contribution period 1 day 10 hours 48 minutes
 * Amount raised 148,000 ETH (~ USD 33.2 million @ 224.65 ETH/USD)
 * [4,212 internal transactions to the multisig](https://etherscan.io/txsInternal?a=0x3dd88b391fe62a91436181ed2d43e20b86cde60c)
 
@@ -51,6 +51,8 @@ The *Trustee* contract will be deployed when the crowdsale is finalised.
 
 Multisig balance at completion:
 <kbd><img src="images/StoxMultisigAtCompletion-20170804-112257.png" /></kbd>
+
+The crowdsale and token contract events can be found in [scripts/output.txt](scripts/output.txt).
 
 <br />
 
